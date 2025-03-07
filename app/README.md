@@ -1,6 +1,13 @@
 # App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.0.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.0. but developed using Angular 16<br>
+
+canMatch is a route guard that prevents a route from being matched unless certain conditions are met.<br>
+Why use canMatch?<br>
+Hides routes completely from users who shouldn't access them (unlike canActivate, which only blocks access after matching).<br>
+Example<br>
+If a user is not an admin, canMatch stops Angular from even recognizing the route.<br>
+If we used only canActivate, Angular would still recognize /admin but then block access.<br>
 
 ## Development server
 
