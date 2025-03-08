@@ -8,6 +8,8 @@ Hides routes completely from users who shouldn't access them (unlike canActivate
 Example<br>
 If a user is not an admin, canMatch stops Angular from even recognizing the route.<br>
 If we used only canActivate, Angular would still recognize /admin but then block access.<br>
+Use canMatch → When you want to hide the route entirely (e.g., role-based access control).<br>
+Use canActivate → When the route should be matched but access is granted or denied dynamically (e.g., authentication checks).
 
 ## Development server
 
